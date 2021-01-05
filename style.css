@@ -150,6 +150,7 @@ section {
 
 .about .about-content .right p {
     text-align: justify;
+    font-size: 20px;
 }
 
 .about .about-content .right a {
@@ -168,7 +169,42 @@ section {
     color: grey;
     background: none;
 }
+.skills {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    
+}
+.skills .title {
+    position: relative;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    border-bottom: black 2px solid;
+    border-bottom-width: 1%;
+    
+}
 
+.skills .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 2%;
+}
+.skills .skills-content .left {
+    width: 50%;
+}
+
+.skills-list {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.skills p {
+    font-size: 20px;
+}
 
 
 
