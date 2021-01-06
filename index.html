@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joe Bentley Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -15,9 +15,10 @@
             <div class="logo"><a href="#">Portfolio</a></div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -35,6 +36,7 @@
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About</h2>
+            <a name="about"></a>
             <div class="about-content">
                 <div class="column left">
                     <img src="./images/headshot.jpg" alt="headshot of Joe Bentley">
@@ -70,21 +72,26 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer-center">
-            <div class="icons">
-              <a href="https://www.facebook.com/wearecodenation" target="/">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-              </a>
-              <a target="/" href="https://www.linkedin.com/company/wearecodenation">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a target="/" href="https://github.com/JRainbow1997/Musical_Masterminds">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-    </footer>
+    <section class="contact">
+        <div class="max-width">
+        <h2 class="title">Contact</h2>
+        <form class="contact-form">
+            <a name="contact"></a>
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
+    </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
