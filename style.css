@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Russo+One&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -104,6 +105,24 @@
     margin: 5px 0;
 }
 
+.ex1 {
+    z-index: 999;
+    font-size: 30px;
+    height: 100%;
+    text-align: center;
+
+}
+.icons {
+      margin: 0 20px;
+      color: black;
+      
+}
+.ex1 i:hover {
+    color: #ef43a1;
+     cursor: pointer;
+}
+
+
 section {
     padding: 100px 0;
 }
@@ -173,6 +192,11 @@ section {
 }
 .skills {
     font-family: 'Roboto Mono', monospace;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding-bottom: 50px;
+	padding-top: 50px;
+	gap:100px
     
 }
 .skills .title {
@@ -199,9 +223,8 @@ section {
 }
 
 .skills-list {
-    float: right;
-    width: 50%;
-    height: 100%;
+    display: flex;
+    justify-content: space-evenly;    
 }
 
 .skills p {
@@ -228,7 +251,8 @@ section {
 	padding: 15px;
 	border-radius: 5px;
 	background-color: grey;
-	margin-bottom: 50px;
+    margin-bottom: 50px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .contact-form label{
@@ -246,7 +270,6 @@ section {
 	padding-top: 10px;
 	padding-bottom:10px; 
 	border-radius: 5px;
-	border:1px solid var(--borderColor);
 	font-size: 14px;
 }
 
@@ -257,9 +280,19 @@ section {
 	padding-top: 10px;
 	padding-bottom:10px; 
 	color: #fff;
-	background-color: grey;
-	border:none;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid grey;
+    transition: all 0.3s ease;
 }
+
+#submit-btn:hover {
+    color: #fff;
+    background: crimson;
+    border: 2px solid grey;
+}
+
+/* SOCIAL LINKS */
 
 
 /* responsive media query */
