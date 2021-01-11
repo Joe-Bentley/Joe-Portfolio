@@ -12,6 +12,26 @@ $(document).ready(function(){
     });
 });
 
+// Scroll down 
+
+
+jQuery(document).ready(function($) {
+
+  $('.smoothscroll').on('click',function (event) {
+     event.preventDefault();
+
+     var target = this.hash,
+     $target = $(target);
+
+     $('html, body').stop().animate({
+         'scrollTop': $target.offset().top
+     }, 800, 'swing', function () {
+         window.location.hash = target;
+     });
+ });
+ 
+});
+
 window.addEventListener("DOMContentLoaded", function() {
 
     // get the form elements defined in your form HTML above
