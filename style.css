@@ -24,7 +24,19 @@
 }
 .navbar.sticky {
   padding: 15px 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
+  border-bottom: black 1px solid;
+  border-width: 50%;
+}
+.navbar.sticky .logo {
+    display: none;
+}
+.navbar.sticky .menu li a {
+    color: #000000;
 }
 
 .navbar .max-width {
@@ -315,7 +327,8 @@ section {
   align-items: center;
 }
 .social li {
-  list-style: none;  
+  list-style: none; 
+  font-size: larger; 
 }
 .social li a {
     
@@ -329,11 +342,11 @@ section {
   transform: scale(0.5) translateY(-15px);
 }
 .git {
-    height: 42px;
-    width: 42px;
+    height: 44px;
+    width: 44px;
 }
 #linkedin {
-    font-size: 42px;
+    font-size: 52px;
     color: black;
 }
 
