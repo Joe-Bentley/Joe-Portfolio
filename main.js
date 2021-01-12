@@ -44,6 +44,20 @@ jQuery(document).ready(function($) {
  
 });
 
+//View details 
+
+(function($) {
+    
+  var panel = $('.details').hide();
+  $('.btn1').click(function() 
+  {
+    $(this).toggleClass( "active" );
+    panel.slideUp(500);
+    $(this).next('.details').show();
+  });                               
+
+})(jQuery);
+
 window.addEventListener("DOMContentLoaded", function() {
 
     // get the form elements defined in your form HTML above
