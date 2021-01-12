@@ -246,25 +246,83 @@ cite {
     width: 35%;
     text-align: justify;
     margin-left: 1%;
-    padding-left: 4%;
 }
 
 .skills-list {
   display: flex;
   justify-content: space-evenly;
   width: 30%;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
+  padding-left: 10%;
 }
 
 .skills-list li {
     line-height:30px;
     padding: 0.5em 2.5em;
-    list-style-type: none; 
+    list-style-type: none;
+    margin-left: 2%; 
 }
 
 .skills p {
   font-size: 20px;
+  line-height: 1.5em;
+}
+
+.cn-banner {
+  padding-top: 40%;
+  padding-left: 0;
+  max-width: fit-content;
+}
+.cn {
+  height: 200px;
+  box-shadow: black 3px 2px 4px 1px;
+  max-width: fit-content;
+}
+.info {
+  padding-top: 1%;
+  color: #000000;
+}
+.info a:hover {
+text-decoration: underline;
+}
+/* more or less */
+.read-more-state {
+  display: none;
+  position: relative;
+}
+
+.read-more-target {
+  opacity: 0;
+  font-size: 0;
+  transition: .2s ease-in;
+  padding:0;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  height:fit-content;
+  /* max-height: 999em; */
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
 }
 
 /* Contact */
