@@ -44,6 +44,7 @@ header p {
     margin: 1%;
     width: 45%;
     height: 700px;
+    box-shadow: black 3px 2px 4px 1px;
 }
 
 .header2 {
@@ -60,6 +61,7 @@ header p {
 .work2 img {
     margin: 1%;
     width: 50%;
+    box-shadow: black 3px 2px 4px 1px;
 }
 
 footer p {
@@ -74,6 +76,10 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/*Text over boxes */
+
+
 
 /* Responsiveness */
 

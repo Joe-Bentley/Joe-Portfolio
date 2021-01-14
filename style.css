@@ -156,6 +156,11 @@ section {
   width: 500px;
   object-fit: cover;
   box-shadow: black 3px 5px 5px 1px;
+  filter: grayscale(0%);
+  transition: .3s ease-in-out;
+}
+.about .about-content .left img:hover {
+  filter: grayscale(100%);
 }
 
 .about .about-content .right {
@@ -273,6 +278,11 @@ cite {
   padding-top: 40%;
   padding-left: 0;
   max-width: fit-content;
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+}
+.cn-banner:hover {
+  filter: grayscale(0%);
 }
 .cn {
   height: 200px;
