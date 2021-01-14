@@ -103,3 +103,8 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     xhr.send(data);
   }
+
+  //reveal image
+
+  window.sr = ScrollReveal();
+  sr.reveal('.projimg');
