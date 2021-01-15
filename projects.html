@@ -20,7 +20,7 @@
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#projects" class="smoothscroll">Projects</a></li>
                 <li><a target="_blank" href="Joe-Bentley-CV-Technical-0.2.pdf">CV</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
@@ -29,7 +29,7 @@
             </div>
         </div>
     </nav>
-    <section class="home" id="home">
+    <section class="home" id="projects">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-2">Projects</div>
@@ -51,21 +51,85 @@
           </a>
     </section>
     <section class="recents" id="recents">
-        <div class="max-width">
-            <h2 class="title">Recent Projects</h2>
-        </div>
+        <div class="max-width"></div>
     </section>
-    <header>
+    <header id="projects">
         <h1>Full Stack App Projects</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illum commodi aperiam! In quo enim esse, tenetur. Ab voluptatem alias aliquid harum corporis quos, pariatur libero ex ipsam beatae eius.</p>
   </header>
 
   <div class="work">
-        <img class="projimg" src="./images/project1.jpg" alt="project img">
-        <img class="projimg" src="./images/project2.jpg" alt="project img">
-        <img class="projimg" src="./images/project3.jpg" alt="project img">
-        <img class="projimg" src="./images/project6.jpg" alt="project img">
-  </div>
+    <div class="overlayWrapper">
+      <div class="overlayItem">
+        <div class="hover-content">
+          <a href="https://musical-masterminds.herokuapp.com/" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="./images/project1.jpg" alt="project img">
+            <div class="proj-details fadeIn-top">
+              <h3>Musical Masterminds</h3>
+              <p>Musical Masterminds is a student built project app which allows a user to Sign in & out, Create an account, and Delete an account. The purpose of the app is to take part in a musical theatre themed quiz with questions and answers imported using an API via https://opentdb.com</p>
+              <br>
+              <p>The user can select the difficulty of the questions, ranging from Easy / Medium / Hard, to suit their preferences and test their knowledge. The user can also input how many questions they would like to answer.</p>
+              <br>
+              <p>This project was built by Josh, Maddy, and Joe. Students of the CodeNation Master: Coding course, an intense online bootcamp, designed for an in-depth look at full-stackdevelopment.</p>
+              <br>
+              <p>To build this App we used the MERN stack. MERN stack is the combination of MongoDB, Express, React, and Node.js. We also used Axios to connect the front + backend together through express.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="overlayWrapper">
+        <div class="overlayItem">
+        <div class="hover-content">
+          <a href="http://immense-scrubland-78051.herokuapp.com/" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="./images/project2.jpg" alt="project img">
+            <div class="proj-details fadeIn-top">
+              <h3>Totems</h3>
+              <p>The goal of this project was to use Python, Html, CSS, and
+                Django to create a database holding information about our chosen topic - Artifacts. Throughout the site you will be able to see information
+                about; individual artifacts including, where it is stored, who
+                discovered the artifact and when the artifact was found, you will also
+                be able to look at all artifacts stored in the same location and all
+                artifacts discovered in the same year.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="overlayWrapper">
+        <div class="overlayItem">
+        <div class="hover-content">
+          <a href="https://github.com/Joe-Bentley/dream-team" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="./images/project3.jpg" alt="project img">
+            <div class="proj-details fadeIn-top">
+              <h3>Video Game Review</h3>
+              <p>Our first MERN (Mongo, Express, React, Node) app which is designed on a theme of a video game review app for uninformed parents, including some of the recent featured and popular games at the time.</p>
+              <br>
+              <p>To begin, you need to create an account to access the home page.</p>
+              <br>
+              <p>On this particular project I focused my input on the Backend, learning how to use Schemas and Insomnia to GET and POST data. Using Mongo Atlas to store our data cloud based so all contributors had access.</p>
+              <br>
+              <p>This app is currently a GitHub repository only, it has not been deployed to a live server.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="overlayWrapper">
+        <div class="overlayItem">
+        <div class="hover-content">
+          <a href="https://github.com/Joe-Bentley/weather-app" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="./images/project6.jpg" alt="project img">
+            <div class="proj-details fadeIn-top">
+              <h3>API Weather App</h3>
+              <p>A project built using Express and Handlebars, to create a real-time data app using an API from https://home.openweathermap.org to display the current weather and temperature in a specified location.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
 
   <div class="header2">
         <h1>Other Projects</h1>
@@ -73,8 +137,40 @@
   </div>
 
   <div class="work2">
-        <img class="projimg" src="./images/project5.jpg" alt="project img">
-        <img class="projimg" src="./images/project4.png" alt="project img">
+    <div class="overlayWrapper">
+        <div class="overlayItem">
+          <div class="hover-content">
+            <a href="https://github.com/Joe-Bentley/the-twits" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="./images/project5.jpg" alt="project img">
+              <div class="proj-details fadeIn-top">
+                <h3>Twiiter Replica</h3>
+                <p>Our first team project using React. A static webpage composed of 3 components. Sidebar, Main Feed, and Trends.</p>
+                <br>
+                <p>The aim of the project was to replicate a social media webpage, our chosen platform was Twitter. The app is functional in terms of posting new tweets to add to the feed.</p>
+                <br>
+                <p>Our first team project on the bootcamp, the hardest part of this exercise was our first time using GitKraken and GitHub. From this project I learnt a lot about teamwork and communication as well as the importance of Git.</p>
+                <br>
+                <p>All news articles were relevant at the time of creation.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="overlayItem">
+            <div class="hover-content">
+              <a href="https://github.com/Joe-Bentley/RGB-DigitalClock" target="_blank">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="./images/project4.png" alt="project img">
+                <div class="proj-details fadeIn-top">
+                  <h3>RGB Digital Clock</h3>
+                  <p>A mini project created using HTML | CSS | JavaScript in attempt to create an RGB themed digital clock which uses the new Date object, a datatype built into the JS library.</p>
+                  <br>
+                  <p>I like RGB.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>  
   </div>
 
   <footer>
@@ -83,7 +179,7 @@
 </div>
     <script src="main.js">
         window.sr = ScrollReveal();
-        sr.reveal('.projimg');
+        sr.reveal('.content-image');
     </script>
 </body>
 </html>
