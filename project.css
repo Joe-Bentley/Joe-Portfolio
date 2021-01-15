@@ -31,7 +31,7 @@ p {
 
 header {
     
-    margin: 50px 0 100px 60px;
+    margin: 50px 60px 100px 60px;
 }
 
 header p {
@@ -56,7 +56,7 @@ header p {
 
 .header2 {
     position: relative;
-    margin: 130px 0 80px 40px;
+    margin: 50px 60px 100px 60px;
     font-family: "Roboto Mono", monospace;
 }
 
@@ -202,7 +202,7 @@ overlayWrapper, overlayWrapper:before, overlayWrapper:after{
 @media only screen and (max-width: 414px) {
     header {
           text-align: left;
-          margin: 100px 0 100px 30px;
+          margin: 50px 30px 100px 30px;
     }
 
     header h1 {
@@ -210,8 +210,8 @@ overlayWrapper, overlayWrapper:before, overlayWrapper:after{
     }
 
     header p {
-          font-size: 12px;
-          width: 90%;
+          font-size: 15px;
+          width: 100%;
     }
 
     .work1 {
@@ -221,42 +221,56 @@ overlayWrapper, overlayWrapper:before, overlayWrapper:after{
     }
 
     .work img {
-          margin: 2%;
+          margin-bottom: 2%;
           width: 100%;
-          height: 150%;
-          padding-bottom: 1%;
+          height: 200px;
+          padding-bottom: 2%;
+          z-index: -1;
     }
     .overlayItem{
         display: block;
         width: 100%;
+        margin: 0;
+        padding-bottom: 15%;
     }
     .content-overlay {
         width: 100%;
-        height: 300px;
-        padding-bottom: 1%;
     }
     .content-image {
-        width: 350px;
-        height: 400px;
+        display: block;
+        z-index: -1;
     }
+    .hover-content {
+        position: relative;
+        width: 95%;
+        margin: auto;
+        padding: auto;
+        overflow: hidden;
+      }
     .hover-content .content-overlay {
-        width: 350px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.883);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
     }
     .proj-details h3{
         font-weight: 400;
         margin-bottom: 0.5em;
-        font-size: 10px;
+        font-size: 12px;
         text-transform: uppercase;
         color:#DD5436
       }
     .proj-details {
         position: absolute;
-        text-align: center;
         width: 100%;
-        height: fit-content;
-        font-size: 2px;
+        height: 100%;
         opacity: 0;
+        margin: 0;
+        padding: 0;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -265,16 +279,23 @@ overlayWrapper, overlayWrapper:before, overlayWrapper:after{
         transition: all 0.3s ease-in-out 0s;
       }
 
-    .proj-details p{
-        width: fit-content;
-        text-align: center;
+    .proj-details p {
+        width: 100%;
+        height: fit-content;
         color: #fff;
-        font-size: 5px;
-         padding: 0px 60px;
+        font-size: 7px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
       }
 
+      .work2 {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
     .header2 {
-          margin: 130px 0 40px 12px;
+        margin: 50px 30px 100px 30px;
     }
 
     .header2 h1 {
@@ -282,11 +303,18 @@ overlayWrapper, overlayWrapper:before, overlayWrapper:after{
     }
 
     .header2 p {
-          font-size: 12px;
-          width: 90%;
-    }
+        font-size: 15px;
+        width: 100%;
+  }
 
     .work2 img {
-          margin: 2%;
+          margin: 1px;
     }
+    footer {
+        margin: 10%;
+    }
+    footer p {
+        text-align: center;
+        color: grey;
+        font-size: 15px;
 }
