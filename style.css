@@ -517,7 +517,7 @@ cite {
 
 /* Footer */
 
-/* responsive media query */
+/* responsive media query iPhone */
 
 @media only screen and (max-width: 414px) {
   .max-width {
@@ -565,7 +565,7 @@ cite {
     background-color: rgb(0, 0, 0);
     color: #fff;
     top: 0;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
   .navbar .menu.active {
     left: 0;
@@ -576,7 +576,7 @@ cite {
     display: block;
     border: none;
     color: #fff;
-    z-index: 999;
+    z-index: 2;
   }
   .navbar .menu li a {
     display: inline-block;
@@ -585,16 +585,17 @@ cite {
     font-size: 25px;
     color: #fff;
   }
+
   .home .max-width {
     margin: 0;
   }
 
-  .home .social li a {
-    z-index: -1;
+  .home .social li {
+    z-index: -1;       
   }
   .home-content {
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
   .home .home-content .text-2 {
     font-size: 30px;
@@ -612,27 +613,21 @@ cite {
     font-size: 18px;
     padding: 2%;
   }
-  .left img {
-    width: 250px;
-    height: 250px;
+  .prof-pic {
+    justify-content: center;
+    align-items: center;
   }
   .about .about-content .left img {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 0 20px;
+    margin: 0 auto 10px auto;
     position: relative;
     width: 300px;
     height: 300px;
-    padding: 1%;
   }
   .about .about-content .right {
     flex: 100%;
   }
 
-  .contact-form {
-    margin: 5px;
-  }
   .skills .title {
     font-size: 40px;
     font-weight: 500;
@@ -652,19 +647,36 @@ cite {
     padding-bottom: 5%;
   }
 
+  .skills .skills-content .right {
+    width: 100vw;
+    margin: 0;
+  }
+
   .skills-list {
-    width: 75vw;
     padding: 0;
     font-size: 16px;
     padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
   }
   .cn-banner {
     padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    width: 100%;
+    margin: 0;
   }
   .cn {
     height: 100px;
     box-shadow: black 3px 2px 4px 1px;
-    width: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .cn-banner .info {
+    padding-top: 10%;
+  }
+  .contact-form {
+    margin: 5px;
   }
   .contact .title {
     font-size: 40px;

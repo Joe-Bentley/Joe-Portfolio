@@ -107,4 +107,4 @@ window.addEventListener("DOMContentLoaded", function() {
   //reveal image
 
   window.sr = ScrollReveal();
-  sr.reveal('.projimg');
+  sr.reveal('.content-image');
