@@ -521,9 +521,9 @@ cite {
 
 /* responsive media query iPhone 5/SE ~ iPad */
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 1366px) {
   html {
-    width: 100vw;
+    width: auto;
   }
   .max-width {
     margin: 0;
@@ -598,7 +598,7 @@ cite {
   }
 
   .home .social li {
-    z-index: -1;       
+    z-index: -1;
   }
   .home-content {
     width: 100%;
@@ -626,6 +626,9 @@ cite {
     height: auto;
     width: auto;
   }
+  .about .about-content .left blockquote {
+    text-align: center;
+  }
   .about .about-content .left img {
     display: flex;
     margin: 0 auto 10px auto;
@@ -642,10 +645,9 @@ cite {
     font-weight: 500;
   }
   .skills .skills-content .column {
-    width: 100vw;
+    width: auto;
     position: relative;
     display: inline-block;
-    width: 100vw;
     font-size: 18px;
     padding: 2%;
   }
@@ -657,8 +659,9 @@ cite {
   }
 
   .skills .skills-content .right {
-    width: 100vw;
+    width: auto;
     margin: 0;
+    text-align: left;
   }
 
   .skills-list {
