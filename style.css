@@ -592,7 +592,8 @@ cite {
     color: #fff;
   }
   .home {
-    background-size: cover;
+    background: none;
+    background-color: #0e0e0e;
   }
   .home .max-width {
     margin: 0;
