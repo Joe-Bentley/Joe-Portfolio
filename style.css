@@ -10,13 +10,6 @@
   text-decoration: none;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-  padding: 15px 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  transition: all 0.3 ease;
-}
 .max-width {
   max-width: 100%;
   padding: 0 80px;
@@ -24,6 +17,15 @@
 }
 section {
   padding: 100px 0;
+}
+
+/* nav bar(s) */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  transition: all 0.3 ease;
 }
 
 .navbar.sticky {
@@ -82,21 +84,21 @@ section {
   display: none;
 }
 
+/* home landing page  */
+
 .home {
   display: flex;
   background: url("./images/background1.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+  width: auto;
   color: white;
   min-height: 500px;
   justify-content: center;
   align-items: center;
 }
 
-.home .max-width {
-  margin: auto 0 auto 40px;
-}
 .home-content {
   background-color: rgba(128, 128, 128, 0.089);
   border: rgba(128, 128, 128, 0.287) solid 4px;
@@ -517,13 +519,16 @@ cite {
 
 /* Footer */
 
-/* responsive media query iPhone */
+/* responsive media query iPhone 5/SE ~ iPad */
 
-@media only screen and (max-width: 414px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  html {
+    width: 100vw;
+  }
   .max-width {
     margin: 0;
     padding: 0 20px;
-    width: 414px;
+    width: auto;
   }
   img {
     z-index: -1;
@@ -533,6 +538,7 @@ cite {
     font-size: 23px;
     display: block;
     z-index: 999;
+    width: 100vw;
   }
   .menu-btn i.active:before {
     content: "\f00d";
@@ -541,7 +547,7 @@ cite {
     display: none;
   }
   .navbar.sticky {
-    width: max-content;
+    width: auto;
     background-color: #000000;
     display: flex;
     align-items: center;
@@ -588,6 +594,7 @@ cite {
 
   .home .max-width {
     margin: 0;
+    width: auto;
   }
 
   .home .social li {
@@ -616,6 +623,8 @@ cite {
   .prof-pic {
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: auto;
   }
   .about .about-content .left img {
     display: flex;
@@ -667,7 +676,7 @@ cite {
     margin: 0;
   }
   .cn {
-    height: 100px;
+    height: auto;
     box-shadow: black 3px 2px 4px 1px;
     width: 100%;
     margin: 0;
@@ -676,7 +685,9 @@ cite {
     padding-top: 10%;
   }
   .contact-form {
-    margin: 5px;
+    margin: 4%;
+    display: block;
+    max-width: fit-content;
   }
   .contact .title {
     font-size: 40px;
