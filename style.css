@@ -591,7 +591,9 @@ cite {
     font-size: 25px;
     color: #fff;
   }
-
+  .home {
+    background-size: cover;
+  }
   .home .max-width {
     margin: 0;
     width: auto;
