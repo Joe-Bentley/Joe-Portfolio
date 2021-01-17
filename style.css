@@ -613,6 +613,10 @@ cite {
   .home .home-content .text-3 {
     font-size: 20px;
   }
+
+  .scroll-down {
+    bottom: 15vh;
+  }
   .about .title {
     font-size: 40px;
     font-weight: 500;
