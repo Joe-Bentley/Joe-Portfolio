@@ -149,12 +149,17 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.left .prof-pic {
+  margin-right: 2px;
+}
 .about .about-content .left {
   width: 30%;
 }
 .about .about-content .left img {
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
+  max-width: 450px;
   object-fit: cover;
   box-shadow: black 3px 5px 5px 1px;
   filter: grayscale(0%);
