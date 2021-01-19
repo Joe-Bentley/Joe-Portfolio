@@ -610,7 +610,7 @@ cite {
   }
 
   .home .social li {
-    z-index: 0;
+    display: none;
   }
   .home-content {
     width: 100%;
@@ -701,6 +701,7 @@ cite {
     box-shadow: black 3px 2px 4px 1px;
     width: 100%;
     margin: 0;
+    filter: none;
   }
   .cn-banner .info {
     padding-top: 10%;

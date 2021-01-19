@@ -4,11 +4,11 @@ $(document).ready(function () {
   $('.home-content').fadeIn(1500);
 });
 
-// $(document).ready(function () {
-//   $('.social').hide();
+$(document).ready(function () {
+  $('.social').hide();
 
-//   $('.social').fadeIn(2000);
-// });
+  $('.social').fadeIn(2000);
+});
 
 $(document).ready(function(){
     $(window).scroll(function(){
