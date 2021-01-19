@@ -654,6 +654,9 @@ cite {
     width: 300px;
     height: 300px;
   }
+  .about .about-content .right p {
+    text-align: justify;
+  }
   .about .about-content .right {
     flex: 100%;
   }
@@ -674,6 +677,7 @@ cite {
     width: 100%;
     font-size: 18px;
     padding-bottom: 5%;
+    text-align: justify;
   }
 
   .skills .skills-content .right {
