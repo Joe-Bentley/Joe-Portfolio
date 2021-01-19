@@ -4,15 +4,15 @@ $(document).ready(function () {
   $('.home-content').fadeIn(1500);
 });
 
-$(document).ready(function () {
-  $('.social').hide();
+// $(document).ready(function () {
+//   $('.social').hide();
 
-  $('.social').fadeIn(2000);
-});
+//   $('.social').fadeIn(2000);
+// });
 
 $(document).ready(function(){
     $(window).scroll(function(){
-        if(this.scrollY > 1325){
+        if(this.scrollY > 1125){
             $('.navbar').addClass("sticky");
         } else {
             $('.navbar').removeClass("sticky");
@@ -22,6 +22,14 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+});
+
+$(document).ready(function(){
+
+    $(' .navbar .menu.active li a smoothscroll').click(function(){
+      $('.navbar.sticky .menu.active').collapse("hide");
+    });
+    
 });
 
 // Scroll down 

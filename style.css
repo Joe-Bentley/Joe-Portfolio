@@ -539,7 +539,7 @@ cite {
     z-index: -1;
   }
   .menu-btn {
-    color: #fff;
+    color: grey;
     font-size: 23px;
     display: block;
     z-index: 999;
@@ -553,11 +553,12 @@ cite {
   }
   .navbar.sticky {
     width: auto;
-    background-color: #000000;
+    background-color: #0e0e0e;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: small;
+    z-index: 1;
   }
   .navbar.sticky a .smoothscroll {
     display: flex;
@@ -566,6 +567,7 @@ cite {
   }
   .navbar.sticky .menu li a {
     color: #fff;
+    z-index: 999;
   }
   .navbar .menu {
     position: fixed;
@@ -573,10 +575,11 @@ cite {
     width: 100%;
     left: -100%;
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: #0e0e0e;
     color: #fff;
     top: 0;
     transition: all 0.5s ease;
+    z-index: 999;
   }
   .navbar .menu.active {
     left: 0;
@@ -587,15 +590,16 @@ cite {
     display: block;
     border: none;
     color: #fff;
-    z-index: 2;
+    z-index: 997;
   }
   .navbar .menu li a {
     display: inline-block;
     margin: 30px 0;
     padding-top: 15px;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
   }
+
   .home {
     background: none;
     background-color: #0e0e0e;
@@ -606,11 +610,11 @@ cite {
   }
 
   .home .social li {
-    z-index: -1;
+    z-index: 0;
   }
   .home-content {
     width: 100%;
-    z-index: 0;
+    z-index: 1;
   }
   .home .home-content .text-2 {
     font-size: 30px;
@@ -620,11 +624,13 @@ cite {
   }
 
   .scroll-down {
-    bottom: 15vh;
+    bottom: 13%;
+    z-index: 0;
   }
   .about .title {
     font-size: 40px;
     font-weight: 500;
+    z-index: -1;
   }
 
   .about .about-content .column {
