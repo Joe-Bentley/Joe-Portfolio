@@ -155,11 +155,13 @@ section {
 }
 .about .about-content .left {
   width: 30%;
+  max-width: 30%;
 }
 .about .about-content .left img {
   height: 100%;
   width: 100%;
-  max-width: 450px;
+  min-height: 400px;
+  max-width: 90%;
   object-fit: cover;
   box-shadow: black 3px 5px 5px 1px;
   filter: grayscale(0%);
@@ -249,11 +251,12 @@ cite {
 }
 .skills .skills-content .left {
   width: 60%;
+  max-width: 59%;
   margin: 0;
 }
 
 .skills .skills-content .right {
-  width: 35%;
+  width: 25%;
   text-align: justify;
   margin-left: 1%;
 }
@@ -265,6 +268,7 @@ cite {
   font-size: 22px;
   font-weight: 400;
   padding-left: 10%;
+  margin-left: 1%;
 }
 
 .skills-list li {
@@ -280,8 +284,11 @@ cite {
 }
 
 .cn-banner {
-  padding-top: 40%;
+  padding-top: 1.5%;
   padding-left: 0;
+  margin: 0;
+  position: relative;
+  left: 0;
   max-width: fit-content;
   filter: grayscale(100%);
   transition: 0.3s ease-in-out;
@@ -343,9 +350,6 @@ cite {
 /* Contact */
 
 .contact {
-  /* background: url("images/background1.png");
-  background-size: cover;
-  background-attachment: fixed; */
   background: #0e0e0e;
   min-height: 800px;
   padding-bottom: 4%;
@@ -641,18 +645,23 @@ cite {
   .prof-pic {
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
   }
   .about .about-content .left blockquote {
     text-align: center;
+  }
+  .about .about-content .left {
+    width: 100%;
+    max-width: 100%;
   }
   .about .about-content .left img {
     display: flex;
     margin: 0 auto 10px auto;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
   }
   .about .about-content .right p {
     text-align: justify;
@@ -665,16 +674,25 @@ cite {
     font-size: 40px;
     font-weight: 500;
   }
-  .skills .skills-content .column {
+  .skills-content {
     width: auto;
+  }
+  .skills .skills-content .column .left {
+    width: 100vw;
+    max-width: max-content;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 18px;
     padding: 2%;
   }
+  .skills .skills-content .left {
+    width: 99%;
+    max-width: 100%;
+  }
 
   .skills .left p {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     font-size: 18px;
     padding-bottom: 5%;
     text-align: justify;
